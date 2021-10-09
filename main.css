@@ -1,26 +1,7 @@
-body{
-    min-height: 2000px;
-    display:flex;
+
+.btn{
+    font-size: 34px;
     justify-content: center;
     align-items: center;
-    background-color:#000;
-}
-.color-picker{
-    position: relative;
-
-}
-
-#color-indicator{
-    display: inline-block;
-    width: 200px;
-    height:200px;
-    background-color: #fff;
-    border-radius:20px;
-    vertical-align: middle;
-}
-
-#color-picker{
-     display: inline-block;
-     vertical-align: middle;
-     margin-left: 40px;
+    margin:auto;
 }

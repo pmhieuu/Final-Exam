@@ -68,3 +68,13 @@ console.log("Tổng cân nặng đội 2 là:", sum2);
 
 
 
+const colors = ["green", "yellow", "red","blue", "pink", "green"]; 
+const btn = document.querySelector(".btn");
+pickColor = () => {
+    const colorsIndex = Math.floor(Math.random() * colors.length);
+    return colors[colorsIndex];
+}
+
+btn.addEventListener("click", function(){
+    document.body.style.backgroundColor = pickColor()
+})
