@@ -67,14 +67,11 @@ console.log("Tổng cân nặng đội 2 là:", sum2);
 
 
 
+let colorInput = document.querySelector('#color');
+let hexInput = document.querySelector('#hex');
 
-const colors = ["green", "yellow", "red","blue", "pink", "green"]; 
-const btn = document.querySelector(".btn");
-pickColor = () => {
-    const colorsIndex = Math.floor(Math.random() * colors.length);
-    return colors[colorsIndex];
-}
-
-btn.addEventListener("click", function(){
-    document.body.style.backgroundColor = pickColor()
-})
+colorInput.addEventListener('input', () =>{
+    let color = colorInput.value;
+    hexInput.value = color;
+    document.body.style.backgroundColor = color;
+});
